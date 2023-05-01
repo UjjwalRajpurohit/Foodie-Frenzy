@@ -1,0 +1,350 @@
+<section class="hero py-16">
+    <div class="container mx-auto flex items-center justify-between">
+        <div class="w-2/5">
+            <h1 class="quotes">"Eat what makes you happy"</h1>
+            <h6 class="text-lg"><em>Are you hungry?</em></h6>
+            <h1 class="text-3xl md:text-6xl font-bold">Don't wait !</h1>
+            <button class="px-6 py-2 rounded-full text-white font-bold mt-4 btn-primary"><a class="ordernow" href="#Menu">Order Now</a></button>
+        </div>
+        <div class="w-3/5">
+            <img src="/img/restaurent.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<section>
+    <Container>
+      <Row>
+        <Col lg="12" className="text-center">
+          <div class="center-k-liye">  
+          <h5 className="feature__subtitle mb-4">What we serve</h5>
+          <h2 className="feature__title">Just sit back at home</h2>
+          <h2 className="feature__title">
+            we will <span>take care</span>
+          </h2>
+         
+          <p className="feature__text">
+            Whether you choose to dine in, order online for delivery, or pick up your food,<br> you can always count on Hotel Foodie Frenzy for exceptional service and delicious food.
+          </p>
+        </div>
+        </Col>
+        <div class="flex-k-liye">
+        
+          <Col lg="4" md="6" sm="6" key={index} className="mt-5">
+            <div className="feature__item text-center px-5 py-3">
+              <img
+                src="/img/delivery.png"
+                alt="feature-img"
+                className="w-25 mb-3"
+              />
+              <h5 className=" fw-bold mb-3">Fast Delivery </h5>
+              <p>Our fast delivery service ensures that<br> you can enjoy our exceptional food in <br>the comfort of your own home.</p>
+            </div>
+          </Col>
+
+          <Col lg="4" md="6" sm="6" key={index} className="mt-5">
+            <div className="feature__item text-center px-5 py-3">
+              <img
+                src="/img/dine_in.png"
+                alt="feature-img"
+                className="w-25 mb-3"
+              />
+              <h5 className=" fw-bold mb-3">Marvellous Dine In </h5>
+              <p>At Hotel Foodie Frenzy, we pride ourselves on <br>providing a top-notch dining experience with <br>delicious and beautifully presented dishes, cozy <br>atmosphere, and friendly and attentive staff.</p>
+            </div>
+          </Col>
+
+          <Col lg="4" md="6" sm="6" key={index} className="mt-5">
+            <div className="feature__item text-center px-5 py-3">
+              <img
+                src="/img/pickup.png"
+                alt="feature-img"
+                className="w-25 mb-3"
+              />
+              <h5 className=" fw-bold mb-3">Easy Pick Up</h5>
+              <p>Our easy pickup option makes it convenient <br>for you to grab a quick bite on the go</p>
+            </div>
+          </Col>
+          </div>
+      
+      </Row>
+    </Container>
+  </section>
+
+
+<section id="Menu">
+<section class="menu container mx-auto py-8">
+    <h1 class="text-xl font-bold mb-8">Our Menu</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 col-gap-12 row-gap-16">
+        <% pizzas.forEach(function(pizza) { %>
+        <div class="w-full md:w-64">
+          <h1 class="mb-4 text-lg"><center><%= pizza.category %></center></h1>
+            <img class="h-40 mb-4 mx-auto" src="/img/<%= pizza.image %>" alt="">
+            <div class="text-center">
+                <h2 class="mb-4 text-lg"><%= pizza.name %></h2>
+                <span class="size py-1 px-4 rounded-full uppercase text-xs"><%= pizza.size %></span>
+                <div class="flex items-center justify-around mt-6">
+                    <span class="font-bold text-lg">₹<%= pizza.price %></span>
+                    <button data-pizza="<%= JSON.stringify(pizza) %>"
+                        class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                        <span>+</span>
+                        <span class="ml-4">Add</span>
+                    </button>
+                </div>
+                
+            </div>
+           
+        </div>
+        <% }) %>
+
+    </div>
+</section>
+</section>
+
+<section>
+    <Container>
+      <Row>
+        <Col lg="6" md="6">
+          <div class="center-k-liye" className="testimonial ">
+            <h5 className="testimonial__subtitle mb-4">Testimonial</h5>
+            <h2 className="testimonial__title mb-4">
+              What our <span>customers</span> are saying
+            </h2>
+            <!-- <p className="testimonial__desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio quasi qui minus quos sit perspiciatis inventore
+              quis provident placeat fugiat!
+            </p> -->
+            
+            <!-- Carousel wrapper -->
+<div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel">
+    <!-- Controls -->
+    <!-- <div class="d-flex justify-content-center mb-4">
+      <button class="carousel-control-prev position-relative" type="button"
+        data-mdb-target="#carouselMultiItemExample" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next position-relative" type="button"
+        data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
+    <!-- Inner -->
+    <div class="carousel-inner py-4">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+                <div class="photo-center">
+              <img class="rounded-circle shadow-1-strong mb-4"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar"
+                style="width: 150px;" /></div>
+                <h5 class="mb-3">Anna Deynah</h5>
+              <p>UX Designer</p>
+              <p class="text-muted">
+                <i class="fas fa-quote-left pe-2"></i>
+                "Hotel Foodie Frenzy is my new favorite spot in town. The food is exceptional, the service is impeccable, and the prices are very reasonable. I particularly appreciated the knowledgeable staff, who were able to offer great recommendations and answer all of my questions. I can't wait to come back and try more dishes!"
+              </p>
+              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-4 d-none d-lg-block">
+                <div class="photo-center">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
+                style="width: 150px;" /></div>
+              <h5 class="mb-3">John Doe</h5>
+              <p>Web Developer</p>
+              <p class="text-muted">
+                <i class="fas fa-quote-left pe-2"></i>
+                "I had heard great things about Hotel Foodie Frenzy, and I'm happy to say that it lived up to the hype. The flavors were bold and unique, and the dishes were perfectly executed. I was particularly impressed with the vegetarian options, which were just as flavorful and satisfying as the meat dishes. This restaurant is a must-visit for anyone who loves great food!"
+              </p>
+              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li>
+                  <i class="fas fa-star-half-alt fa-sm"></i>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-4 d-none d-lg-block">
+                <div class="photo-center">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                style="width: 150px;" /></div>
+              <h5 class="mb-3">Maria Kate</h5>
+              <p>Photographer</p>
+              <p class="text-muted">
+                <i class="fas fa-quote-left pe-2"></i>
+                "What an amazing experience at Hotel Foodie Frenzy! The food was not only delicious, but it was also beautifully presented. The atmosphere was cozy and inviting, and the staff were incredibly welcoming and attentive. I will definitely be coming back for more!"
+              </p>
+              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="far fa-star fa-sm"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Single item -->
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="rounded-circle shadow-1-strong mb-4"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp" alt="avatar"
+                style="width: 150px;" />
+              <h5 class="mb-3">John Doe</h5>
+              <p>UX Designer</p>
+              <p class="text-muted">
+                <i class="fas fa-quote-left pe-2"></i>
+                "What an amazing experience at Hotel Foodie Frenzy! The food was not only delicious, but it was also beautifully presented. The atmosphere was cozy and inviting, and the staff were incredibly welcoming and attentive. I will definitely be coming back for more!"
+              </p>
+              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-4 d-none d-lg-block">
+              <img class="rounded-circle shadow-1-strong mb-4"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar"
+                style="width: 150px;" />
+              <h5 class="mb-3">Alex Rey</h5>
+              <p>Web Developer</p>
+              <p class="text-muted">
+                <i class="fas fa-quote-left pe-2"></i>
+                "I had heard great things about Hotel Foodie Frenzy, and I'm happy to say that it lived up to the hype. The flavors were bold and unique, and the dishes were perfectly executed. I was particularly impressed with the vegetarian options, which were just as flavorful and satisfying as the meat dishes. This restaurant is a must-visit for anyone who loves great food!"
+              </p>
+              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li>
+                  <i class="fas fa-star-half-alt fa-sm"></i>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-4 d-none d-lg-block">
+              <img class="rounded-circle shadow-1-strong mb-4"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(5).webp" alt="avatar"
+                style="width: 150px;" />
+              <h5 class="mb-3"> Maria Kate</h5>
+              <p>Photographer</p>
+              <p class="text-muted">
+                <i class="fas fa-quote-left pe-2"></i>
+                "Hotel Foodie Frenzy is my new favorite spot in town. The food is exceptional, the service is impeccable, and the prices are very reasonable. I particularly appreciated the knowledgeable staff, who were able to offer great recommendations and answer all of my questions. I can't wait to come back and try more dishes!"
+              </p>
+              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="far fa-star fa-sm"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Single item -->
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="rounded-circle shadow-1-strong mb-4"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp" alt="avatar"
+                style="width: 150px;" />
+              <h5 class="mb-3">Anna Deynah</h5>
+              <p>UX Designer</p>
+              <p class="text-muted">
+                <i class="fas fa-quote-left pe-2"></i>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+                officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+              </p>
+              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-4 d-none d-lg-block">
+              <img class="rounded-circle shadow-1-strong mb-4"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(8).webp" alt="avatar"
+                style="width: 150px;" />
+              <h5 class="mb-3">John Doe</h5>
+              <p>Web Developer</p>
+              <p class="text-muted">
+                <i class="fas fa-quote-left pe-2"></i>
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                suscipit laboriosam, nisi ut aliquid commodi.
+              </p>
+              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li>
+                  <i class="fas fa-star-half-alt fa-sm"></i>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-4 d-none d-lg-block">
+              <img class="rounded-circle shadow-1-strong mb-4"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(7).webp" alt="avatar"
+                style="width: 150px;" />
+              <h5 class="mb-3">Maria Kate</h5>
+              <p>Photographer</p>
+              <p class="text-muted">
+                <i class="fas fa-quote-left pe-2"></i>
+                "Hotel Foodie Frenzy is my new favorite spot in town. The food is exceptional, the service is impeccable, and the prices are very reasonable. I particularly appreciated the knowledgeable staff, who were able to offer great recommendations and answer all of my questions. I can't wait to come back and try more dishes!"
+              </p>
+              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="far fa-star fa-sm"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Inner -->
+  </div> 
+            <!-- <TestimonialSlider /> -->
+          </div>
+        </Col>
+
+        <!-- <Col lg="6" md="6">
+          <img src="/img/dine_in.png" alt="testimonial-img" className="w-100" />
+        </Col> -->
+      </Row>
+    </Container>
+  </section>
