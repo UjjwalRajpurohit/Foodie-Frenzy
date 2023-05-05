@@ -1971,10 +1971,10 @@
   "resolved" "https://registry.npmjs.org/bson/-/bson-1.1.6.tgz"
   "version" "1.1.6"
 
-"bson@^5.0.1":
-  "integrity" "sha512-FEecNHkhYRBe7X9KDkdG12xNuz5VHGeH6mCE0B5sBmYtiR/Ux/9vUH/v4NUoBCDr6NuEhvahjoLiiRogptVW0A=="
-  "resolved" "https://registry.npmjs.org/bson/-/bson-5.1.0.tgz"
-  "version" "5.1.0"
+"bson@^5.2.0":
+  "integrity" "sha512-HevkSpDbpUfsrHWmWiAsNavANKYIErV2ePXllp1bwq5CDreAaFVj6RVlZpJnxK4WWDCJ/5jMUpaY6G526q3Hjg=="
+  "resolved" "https://registry.npmjs.org/bson/-/bson-5.2.0.tgz"
+  "version" "5.2.0"
 
 "buffer-from@^1.0.0":
   "integrity" "sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ=="
@@ -4452,12 +4452,12 @@
     "@types/whatwg-url" "^8.2.1"
     "whatwg-url" "^11.0.0"
 
-"mongodb@^5.1.0":
-  "integrity" "sha512-qgKb7y+EI90y4weY3z5+lIgm8wmexbonz0GalHkSElQXVKtRuwqXuhXKccyvIjXCJVy9qPV82zsinY0W1FBnJw=="
-  "resolved" "https://registry.npmjs.org/mongodb/-/mongodb-5.1.0.tgz"
-  "version" "5.1.0"
+"mongodb@^5.1.0", "mongodb@^5.3.0":
+  "integrity" "sha512-Wy/sbahguL8c3TXQWXmuBabiLD+iVmz+tOgQf+FwkCjhUIorqbAxRbbz00g4ZoN4sXIPwpAlTANMaGRjGGTikQ=="
+  "resolved" "https://registry.npmjs.org/mongodb/-/mongodb-5.3.0.tgz"
+  "version" "5.3.0"
   dependencies:
-    "bson" "^5.0.1"
+    "bson" "^5.2.0"
     "mongodb-connection-string-url" "^2.6.0"
     "socks" "^2.7.1"
   optionalDependencies:
